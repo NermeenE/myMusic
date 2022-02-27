@@ -1,0 +1,192 @@
+<!DOCTYPE html>    <!-- for emmet type html:5 then tab-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">  <!-- this link is from fontawesome.com click on use free and copy the link that it presents-->
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"> <!-- for the icon image next to the link of our website. maybe obtained from (https://tools.dynamicdrive.com/favicon/)-->
+  <link rel="stylesheet" href="css/style.css">   <!-- this is to link in the css file -->
+  <title>Welcome to myMusic</title>
+</head>
+<body>
+<!-- Showcase & Nav -->
+<div id="showcase">
+  <header>
+    <nav class='cf'> <!-- line 15 nav to line31 nav was copied from https://codepen.io/neilso/pen/ziwgI once on then click on html then the right corner down arrow click on it and then click on "view complied html" then copy from nav to nav.-->
+       <ul class='cf'>
+         <li class="hide-on-small">  <!-- We gave this li a class of hide-on-small so on mobile the "myMusic" on the nav bar down hides and doesnt appear twice on the nav bar on mobile screen-->
+           <a href="#showcase">myMusic</a>
+         </li>
+         <li>
+           <a href='#showcase'>Overview</a>
+         </li>
+         <li>
+           <a href='#music'>Music</a>
+         </li>
+         <li>
+           <a href='#video'>Video</a>
+         </li>
+         <li>
+           <a href='#gift-cards'>Gift Cards</a>
+         </li>
+       </ul>
+       <a href='#' id='openup'>myMusic</a>
+    </nav>
+  </header>
+
+
+  <div class="section-main container">
+    <h1>myMusic</h1>
+    <h2>Your music, movies, and TV shows take center stage.</h2>
+    <p class="lead hide-on-small"> <!-- hide-on-small is referring to hide this part once on mobile or small screens, however nothing happens just yet until we add in to define it later in css under @media -->
+      myMusic is the best way to organize and enjoy the music, movies, and TV shows you already have — and shop for the ones you want. Enjoy all the entertainment myMusic has to offer on your Mac and PC.
+    </p>
+  </div>
+</div>
+
+<!-- Music Section -->
+<section id="music" class="section">
+  <div class="container">
+    <h2 class="section-head">
+      <i class="fas fa-music"></i>Music <!-- this is to give the muscis icon with the word music next to it.-->
+      </h2>
+      <h3>45 million songs. Zero ads.</h3>
+      <p class="lead">Stream over 50 million songs, ad-free. Or download albums and tracks to listen to offline. All the music in your personal myMusic library — no matter where it came from — lives right alongside the EarDrum Music catalog. Start your free three-month trial with no commitment, and cancel anytime.</p>
+      <a href="#" class="btn btn-primary mb">Start Your Trial Now</a> <!--link that is formatted into a button to take you to another page. we added mb to refer to the css mb{margin bottom} -->
+      <p class="text-light">EarDrum Music is available in myMusic, and for iOS and Android devices.</p>
+      <img src="img/mockup1.png" alt="">  <!-- this image is for the ipad and iphone: the image inside the ipad/phone we found on pexels.com search "app" then we download and then went on smartmockups.com clicked on all mockups then lefthand side "multiple devices" then top middle clicked on isolated ten clicked on the image and uploaded the image we downloaded from pexels-->
+  </div>
+</section>
+<!-- Video Section -->
+<section id="video" class="section bg-light">
+  <div class="container">
+    <h3>The movie and TV collection you always wished for. Granted.</h3>
+    <p class="lead">
+      With over 100,000 movies and TV shows to choose from, there’s always something great to watch on myMusicAnd if you watch on EarDrum TV 4K, you’ll be able to enjoy a tremendous selection of your favorite content in 4K HDR. So get ready to enjoy episodes of your favorite TV shows or hit movies you’ve been waiting to see — anytime, anywhere. Just tap to play, or even download if you’re going somewhere you won’t have Wi-Fi.</p>
+      <a href="#" class="btn btn-secondary mb">Read More</a>
+      <img src="img/mockup2.png" alt="">
+    </p>
+  </div>
+</section>
+<!-- Entertainment Section -->
+<section id="entertainment" class="section">
+  <div class="container">
+    <h3>A world of entertainment. Available wherever you are.</h3>
+    <p class="lead">Lorem ipsum dolor sit amet, ut viderer torquatos eum, cu est sonet mucius intellegat. Te duo modus omnesque scribentur, civibus scriptorem nam ne. Unum augue rationibus et per, paulo electram suavitate cum ad, te altera facilis vivendo per. Sit ex tempor ceteros recteque. Sea an case solet voluptatum, ei per causae pericula disputando, duo ad aliquip delectus ocurreret. Modus fierent referrentur duo eu, apeirian moderatius ut qui.</p>
+
+  </div>
+</section>
+<!-- Gift Card Section -->
+<section id="gift-cards" class="section bg-light"> <!-- bg-light is to have a light background -->
+  <div class="container">
+    <div class="gift-cards">
+      <div>
+        <img src="img/gift card.png" alt="">
+      </div>
+      <div>
+        <h2>Gift Cards</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio libero perferendis velit minima, tenetur temporibus eius, nesciunt porro ratione quaerat labore doloribus nostrum est necessitatibus harum commodi, sed eaque obcaecati, expedita recusandae. Mollitia, quod tempore ducimus non nobis dolorem libero!
+        </p>
+        <p>Already have an EarDrum myMusic Music Gift Card?</p>
+        <hr> <!--horizontal line-->
+        <a href="#" class="text-secondary"></a> <!-- a tag for the link "Redeem" and text-secondary to give it that navy color as was stated for secondary color above of page-->
+        <i class="fas fa-chevron-right"></i> Redeem<!-- i. = icon fas =fontawesome fa-chevro-right not sure but might be the > next to redeem -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="footer-cols"> <!-- to divide the footer into columns-->
+      <ul>
+        <li>Shop & Learn</li> <!-- like the title -->
+        <li>
+          <a href="#">Music</a>
+        </li>
+        <li>
+          <a href="#">Movies</a>
+        </li>
+        <li>
+          <a href="#">Shows</a>
+        </li>
+        <li>
+          <a href="#">Apps</a>
+        </li>
+        <li>
+          <a href="#">Gift Cards</a>
+        </li>
+      </ul>
+      <ul>
+        <li>EarDrum Store</li> <!-- like the title -->
+        <li>
+          <a href="#">Find a Store</a>
+        </li>
+        <li>
+          <a href="#">Today at EarDrum</a>
+        </li>
+        <li>
+          <a href="#">EarDrum Camp</a>
+        </li>
+        <li>
+          <a href="#">Financing</a>
+        </li>
+        <li>
+          <a href="#">Order Status</a>
+        </li>
+      </ul>
+      <ul>
+        <li>Education & Business</li> <!-- like the title -->
+        <li>
+          <a href="#">EarDrum & Education</a>
+        </li>
+        <li>
+          <a href="#">Shop for College</a>
+        </li>
+        <li>
+          <a href="#">EarDrum & Business</a>
+        </li>
+        <li>
+          <a href="#">Shop for Business</a>
+        </li>
+        <li>
+          <a href="#">Jobs</a>
+        </li>
+      </ul>
+      <ul>
+        <li>About EarDrum</li> <!-- like the title -->
+        <li>
+          <a href="#">Newsroom</a>
+        </li>
+        <li>
+          <a href="#">EarDrum Leadership</a>
+        </li>
+        <li>
+          <a href="#">Investors</a>
+        </li>
+        <li>
+          <a href="#">Events</a>
+        </li>
+        <li>
+          <a href="#">Contact EarDrum</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom text-center">
+    copyright &copy; 2019 EarDrum myMusic
+  </div>
+</footer>
+
+
+  <script
+    src="http://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script> <!-- after you add the js file below, then you need to add the jquery script from code.jquery.com using the latest 3.x using minified not slim -->
+  <script src="js/main.js"></script>  <!-- to link the js file-->
+</body>
+
+</html>

@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans'); /* obtained from fonts.google by searching for pt sans and copying the import part */
+
+/*CSS Variables*/
+:root {
+  --primary-color: #b90415;
+  --primary-color-hover: #d3071b;
+  --secondary-color: #103063;
+  --secondary-color-hover: #143f85;
+  --light-color: #f4f4f4;
+}
+
+body {
+  /* the code was copied from https://codepen.io/neilso/pen/ziwgI clicked on css then on the arrow down we clicked on view complied css then copied all and pasted however we wont use all as we will delete then things we dont need on here*/
+  font-family: 'PT Sans', sans-serif; /* we erased then narrow from pt sans as we dont want a narrow font however we need the font code to be added at the top from google fonts */
+  background: #000046; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #1cb5e0,
+    #000046
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #1cb5e0,
+    #000046
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  margin: 0;
+  color: #fff;
+  line-height: 1.6;
+}
+
+img {
+  /* for the ipad/iphone to have it constricted */
+  width: 100%;
+  margin-top: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+/* Navigation */
+
+nav {
+  height: 40px;
+  width: 100%;
+  background-color: #000046;
+  color: #eee;
+  position: fixed; /* this is to make the nav bar move while you scroll down the page instead on staying in its place up to*/
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  display: inline;
+  float: left;
+}
+nav a {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 0;
+  color: #eee;
+  text-decoration: none;
+}
+nav li:hover {
+  background-color: #444;
+}
+nav a#openup {
+  display: none;
+}
+
+/*Section*/
+.section {
+  padding: 2rem 0; /* to have some spacing between the word music and the ipad/iphone img above it*/
+}
+
+.section-head {
+  /* to make the word music with the music sign bigger */
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.section h3 {
+  font-size: 2rem;
+}
+
+/*Entertainment*/
+section#entertainment {
+  background: url(../img/section-bg.jpg) no-repeat bottom/cover;
+  padding: 10rem 0;
+}
+
+/*gift card*/
+.gift-cards {
+  /*below to divide gift card section into grid like*/
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr; /* this is to divide the words and the card into 2 - 1 fraction for card and 1 fraction - words. you may also put it as repeat(2, 1fr);*/
+  text-align: left;
+}
+
+/* Showcase */
+#showcase {
+  margin: 0;
+  padding: 0;
+  background: url('../img/mymusic\ bg.jpg') no-repeat center/cover; /* this is for the background img saved in img folder for the shows case (main page)*/
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow-y: hidden; /* to get rid of the extra space that was at the top of the nav bar hint the overflow-y meaning y axis at the top*/
+}
+
+#showcase .container {
+  margin-top: 25vh;
+}
+/*we have to put #showcase becuase it wraps back to the html thats all under the id show case */
+#showcase h1 {
+  /* for myTunes. in the middle to make it bigger without adding space under it */
+  font-size: 5rem;
+  margin-bottom: 0;
+  color: #000046;
+}
+
+#showcase h2 {
+  font-size: 2rem;
+}
+
+/*footer*/
+footer .footer-cols {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 2rem;
+  text-align: left;
+  font-size: 14px;
+}
+
+footer .footer-cols ul {
+  /* to get rid of the bulletin points*/
+  list-style: none;
+}
+
+footer .footer-cols ul li:first-child {
+  /* to make the title of footer big and with a line */
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: #444 solid 1px;
+  margin-bottom: 1rem;
+}
+
+footer .footer-bottom {
+  /* copyright part*/
+  background: #000046;
+  padding: 1rem;
+}
+
+/*  Utility classes */ /*(for classes we will use all around the site) */
+.container {
+  max-width: 1180px;
+  text-align: center; /*to move the text to the middle/ such as "Mytunes.Your music, movies, and TV shows take center stage." etc */
+  margin: 0 auto; /* 0 = top&bottom and auto=left&right*/
+  padding: 0 3rem;
+}
+
+.lead {
+  /* which is the paraghragh (myTunes is the best way to organize and enjoy the music, movies, and TV shows you.....)*/
+  font-size: 1.3rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Buttons */
+.btn {
+  padding: 1rem;
+  color: #fff;
+  display: inline-block; /* to make the button on its own line and not interfer with the lines aboce or below but doesnt extend across the container (container is staying in line with everything on the site ([]) not the hole website ()*/
+}
+
+.btn-primary {
+  background: var(
+    --primary-color
+  ); /* for the button color which we have the primary red color up top*/
+}
+
+.btn-primary:hover {
+  background: var(--primary-color-hover);
+}
+
+.btn-secondary {
+  background: var(--secondary-color);
+}
+
+.btn-secondary:hover {
+  background: var(--secondary-color-hover);
+}
+
+/* text colos */
+.text-primary {
+  color: var(--primary-color);
+}
+.text-secondary {
+  color: var(--secondary-color);
+}
+.text-light {
+  color: var(--light-color);
+}
+
+.bg-light {
+  /*  its a tag for a light background color of movie ipad part and text dark color and light background color for gift card since they have the tags in html*/
+  background: var(--light-color);
+  color: #333;
+}
+
+.mb {
+  /* bootstrap mb- margin-bottom - in case we need to use them then we add mb where ever you need to use it on html*/
+  margin-bottom: 1rem;
+}
+
+.mt {
+  /* bootstrap mt- margin-top - in case we need to use them then we add mt where ever you need to use it on html*/
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 580px) {
+  /* the @media screen is for whatever screen size you set it to, so in this case its 580 which is for smart phones*/
+  .hide-on-small {
+    /* this is referring to all item we labeled hide-on-small on html for phones*/
+    display: none;
+  }
+
+  #showcase {
+    /* to make the screen background img half screen so its not so big on small screens such as phone*/
+    height: 50vh;
+  }
+
+  #showcase .container {
+    /* to make the spacing at the top smaller for small screens */
+    margin-top: 15vh;
+  }
+
+  #showcase h1 {
+    font-size: 3rem;
+  }
+  #showcase h2 {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    height: auto;
+    border-bottom: 0;
+  }
+  nav ul {
+    display: none;
+    height: auto;
+  }
+  nav li {
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+  nav a {
+    text-align: left;
+    width: 100%;
+    text-indent: 25px;
+    background: #333;
+    border-bottom: 1px solid #555;
+  }
+  nav a:hover {
+    background: #444;
+  }
+  nav a#openup:after {
+    content: '|||';
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-90deg);
+    /* Safari and Chrome */
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    top: 20px;
+  }
+  nav a#openup {
+    display: block;
+    background-color: #000046;
+    width: 100%;
+    position: relative;
+  }
+}
+.cf:before,
+.cf:after {
+  content: '';
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
+}
+
+@media screen and (max-width: 780px) {
+  .gift-cards {
+    grid-template-columns: 1fr;
+  }
+  footer .footer-cols {
+    /* to get rid off the footer when screen gets to 780*/
+    display: none;
+  }
+}
+
+@media screen and (max-height: 580px) {
+  /*for phone and table of max height of 580 to not show half of the writing on paraghragh up top*/
+  #showcase p.lead {
+    display: none;
+  }
+}
